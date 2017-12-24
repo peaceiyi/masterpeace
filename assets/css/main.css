@@ -3395,3 +3395,34 @@
         padding: 0;
     }
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.audio-player-container {
+  padding: 16px;
+
+  audio {
+    width: 100%;
+    display: block;
+  }
+
+  ul {
+    background-color: lightgray;
+
+    li {
+      padding: 16px;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+
+      &.active {
+        background-color: gray;
+      }
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+}
