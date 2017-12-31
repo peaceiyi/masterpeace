@@ -5,6 +5,7 @@
 
 
 
+
 /*
 	Phantom by HTML5 UP
 	html5up.net | @ajlkn
@@ -3447,9 +3448,7 @@
 
 /* TESTING NEW AUDIO PLAYER*/
 
-//General mixins
 
-//Clearfix mixin
 
 @mixin clearfix() {
   *zoom: 1;
@@ -3466,7 +3465,7 @@
   }
 }
 
-//Media query mixin
+
 @mixin media($type) {
   @if $type == tablet {/* Small devices (tablets, 768px and up) */
     @media (min-width: 768px) and (max-width: 991px) {
@@ -3485,7 +3484,7 @@
   }
 }
 
-//General classes
+
 .screen-reader-text { /* Reusable, toolbox kind of class */
   position: absolute;
   top: -9999px;
@@ -3499,8 +3498,9 @@
   display: inline-block !important;
 }
 
-//General CSS
-body {
+/*general css*/
+
+deez {
   margin: 10px 0 0 0;
 
   .container {
@@ -3555,7 +3555,7 @@ body {
             position: relative;
             top: -13%;
           }
-      }//end .play-box
+      }
       .info-box {
         bottom: 10px;
         left: 65px;
@@ -3610,7 +3610,7 @@ body {
             }
           }
         }
-      }//end .prgoress-box
+      }
       .controls-box {
         bottom: 10px;
         left: 350px;
@@ -3633,7 +3633,7 @@ body {
         }
       }
       @include clearfix();
-    }//end .player
+    }
 
     .play-list {
       display: block;
@@ -3697,5 +3697,5 @@ body {
         @include clearfix();
       }
     }
-  }//end .container
+  }
 }
