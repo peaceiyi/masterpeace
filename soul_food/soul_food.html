@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/main2.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -54,46 +54,51 @@
 					</nav>
 
 				<!-- Main -->
-				<div id="main">
-					<div class="inner">
-						<h1>Sunday Brunch</h1>
-						<!--span class="image main"><img src="images/pic13.jpg" alt="" /></span-->
-					</div>
-
-
-					<div class = "inner">
-						<div class = "album2" style = "padding-right= 20px;">
-							<!--img src="sunday_brunch.jpg" style= "height: 100%; max-weight: 100%; alt"-->
-							<img src="sunday_brunch.jpg" style= "width:100%; height:100%; object-fit: cover; overflow: hidden;">
+					<div id="main">
+						<div class="inner">
+							<h1>Sunday Brunch</h1>
+							<!--span class="image main"><img src="images/pic13.jpg" alt="" /></span-->
 						</div>
 
-						<div class = "tracks2" style = "padding-left = 20px;">
 
-
-						<div class="container">
-							<div class="column add-bottom">
-									<div id="mainwrap">
-											<div id="audiowrap">
-													<div id="audio0">
-															<audio preload id="audio1" controls="controls" controlslist = "nodownload">Your browser does not support HTML5 Audio!</audio>
-													</div>
-
-											</div>
-											<div id="plwrap">
-													<ul id="plList"></ul>
-											</div>
-									</div>
+						<div class = "inner">
+							<div class = "album2" style = "padding-right= 20px;">
+								<!--img src="sunday_brunch.jpg" style= "height: 100%; max-weight: 100%; alt"-->
+								<img src="sunday_brunch.jpg" style= "width:100%; height:100%; object-fit: cover; overflow: hidden;">
 							</div>
-							<div class="column add-bottom center">
-									<p>Music by Masterpeace</p>
-							</div>
-					</div>
-				</div>
+
+							<div class = "tracks2" style = "padding-left = 20px;">
 
 
+							<div class="container">
+						    <div class="column add-bottom">
+						        <div id="mainwrap">
+						            <div id="nowPlay">
+
+						                <span class="right" id="npTitle"></span>
+						            </div>
+						            <div id="audiowrap">
+						                <div id="audio0">
+						                    <audio preload id="audio1" controls="controls" controlslist = "nodownload">Your browser does not support HTML5 Audio!</audio>
+						                </div>
+
+						            </div>
+						            <div id="plwrap">
+						                <ul id="plList"></ul>
+						            </div>
+						        </div>
+						    </div>
+						    <div class="column add-bottom center">
+						        <p>Music by Masterpeace</p>
+						    </div>
+						</div>
 					</div>
-				</div>
-				<div style = "clear: both;"></div>
+
+
+						</div>
+					</div>
+
+
 
 
 
@@ -144,7 +149,47 @@
 			<script src="../assets/js/util.js"></script>
 			<script src="../assets/js/player.js"></script>
 			<script src="../assets/js/audioplayer.js"></script>
-			<script src="sunday_brunch.js"></script>
+			<script src="../assets/js/audioplayer2.js"></script>
+
+			<!--script> related to player.js script
+			var trackUrls = [{
+				'name': 'buggin out',
+				'duration': '0:49',
+				'url': 'https://ia801502.us.archive.org/6/items/sunday_brunch/buggin%20out.mp3'
+			}, {
+				'name': 'captain doom',
+				'duration': '1:20',
+				'url': 'https://ia801502.us.archive.org/6/items/sunday_brunch/captain%20doom.mp3'
+			}, {
+				'name': 'god bless billie holiday',
+				'duration': '1:43',
+				'url': 'https://ia801502.us.archive.org/6/items/sunday_brunch/god%20bless%20billie%20.mp3'
+			}, {
+				'name': 'gospel jubilee',
+				'duration': '1:31',
+				'url': 'https://ia801502.us.archive.org/6/items/sunday_brunch/gospel%20jubilee.mp3'
+			}, {
+				'name': 'howls castle',
+				'duration': '0:53',
+				'url': 'https://ia801502.us.archive.org/6/items/sunday_brunch/howls%20castle.mp3'
+			}, {
+				'name': 'mr. little',
+				'duration': '1:20',
+				'url': 'https://ia601502.us.archive.org/6/items/sunday_brunch/mr%20little.mp3'
+			}, {
+				'name': 'this christmas',
+				'duration': '1:12',
+				'url': 'https://ia801502.us.archive.org/6/items/sunday_brunch/this%20christmas.mp3'
+			}];
+
+
+			var audioPlayer = new AudioPlayer();
+			audioPlayer.setPlaylist(trackUrls);
+
+
+			$('.audio-player-container').append(audioPlayer.getHtml());
+
+		</script-->
 
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="../assets/js/main.js"></script>
