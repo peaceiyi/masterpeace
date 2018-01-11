@@ -28,7 +28,7 @@ jQuery(function ($) {
                 "track": 3,
                 "name": "god bless billie holiday",
                 "length": "1:43",
-                "file": "god bless billie"
+                "file": "god bless billie "
             }, {
                 "track": 4,
                 "name": "gospel jubilee",
@@ -38,7 +38,7 @@ jQuery(function ($) {
                 "track": 5,
                 "name": "howls castle",
                 "length": "0:53",
-                "file": "BSFM_ATKM"
+                "file": "howls castle"
             }, {
                 "track": 6,
                 "name": "mr. little",
@@ -48,12 +48,7 @@ jQuery(function ($) {
                 "track": 7,
                 "name": "this christmas",
                 "length": "1:12",
-                "file": "AC_ATKMTake_1"
-            }, {
-                "track": 8,
-                "name": "All The King's Men (Take 2) - Alternate Cuts",
-                "length": "5:27",
-                "file": "AC_ATKMTake_2"
+                "file": "this christmas"
             }],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,

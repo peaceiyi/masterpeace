@@ -12,7 +12,7 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/late_nite_snacks',
+            mediaPath = 'https://archive.org/download/late_nite_snacks/',
             extension = '',
             tracks = [{
                 "track": 1,
@@ -28,7 +28,7 @@ jQuery(function ($) {
                 "track": 3,
                 "name": "wild west",
                 "length": "0:44",
-                "file": "wild wet"
+                "file": "wild west"
             }, {
                 "track": 4,
                 "name": "welcome to america",
