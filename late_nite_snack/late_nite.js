@@ -12,38 +12,38 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = 'https://archive.org/download/SoulFood_201801/',
+            mediaPath = 'https://archive.org/download/late_nite_snacks',
             extension = '',
             tracks = [{
                 "track": 1,
-                "name": "grand opening",
-                "length": "0:41",
-                "file": "grand opening"
+                "name": "lmk",
+                "length": "1:01",
+                "file": "lmk"
             }, {
                 "track": 2,
-                "name": "boom",
-                "length": "0:41",
-                "file": "boom"
+                "name": "ahi",
+                "length": "0:45",
+                "file": "ahi"
             }, {
                 "track": 3,
-                "name": "i cried",
-                "length": "0:45",
-                "file": "i cried"
+                "name": "wild west",
+                "length": "0:44",
+                "file": "wild wet"
             }, {
                 "track": 4,
-                "name": "melvin's theme",
+                "name": "welcome to america",
                 "length": "1:16",
-                "file": "melvins theme"
+                "file": "welcome to america"
             }, {
                 "track": 5,
-                "name": "mrs. jones",
-                "length": "1:27",
-                "file": "mrs jones"
+                "name": "what winners do",
+                "length": "0:49",
+                "file": "what winners do"
             }, {
                 "track": 6,
-                "name": "waxonomy",
-                "length": "1:16",
-                "file": "waxonomy"
+                "name": "when you flip the sample just right",
+                "length": "0:57",
+                "file": "when you flip the sample just right"
             }],
             buildPlaylist = $.each(tracks, function(key, value) {
                 var trackNumber = value.track,
